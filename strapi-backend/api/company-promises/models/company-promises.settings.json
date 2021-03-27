@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "company_promises",
+  "info": {
+    "name": "CompanyPromises",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Promise": {
+      "type": "text",
+      "required": true
+    },
+    "Date_Of_Promise": {
+      "type": "datetime"
+    },
+    "Source": {
+      "type": "text",
+      "required": true
+    },
+    "company": {
+      "model": "company",
+      "via": "company_promises"
+    }
+  }
+}

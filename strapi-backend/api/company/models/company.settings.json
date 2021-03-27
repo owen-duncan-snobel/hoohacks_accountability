@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "companies",
+  "info": {
+    "name": "Company"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Company_Name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "CEO": {
+      "type": "string",
+      "required": true
+    },
+    "company_promises": {
+      "via": "company",
+      "collection": "company-promises"
+    }
+  }
+}
