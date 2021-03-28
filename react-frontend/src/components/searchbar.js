@@ -10,7 +10,8 @@ const SearchBar = () => {
 		try {
 			await axios({
 				method: 'GET',
-				url: '/companies',
+				url:
+					'https://strapi-accountability-308920.uc.r.appspot.com/companies',
 			}).then((res) => {
 				console.log(res);
 				setData(res.data);

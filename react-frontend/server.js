@@ -12,6 +12,14 @@ app.use((req, res, next) => {
 	res.sendFile(path.join(__dirname, '..', 'build', 'index.html'));
 });
 
+const path = require('path');
+const express = require('express');
+const app = express(); // create express app
+
+app.get('/', (req, res) => {
+	res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
 app.get('/companies', async (req, res) => {
 	try {
 		await axios({
@@ -20,6 +28,7 @@ app.get('/companies', async (req, res) => {
 				'https://strapi-accountability-308920.uc.r.appspot.com/companies',
 		})
 			.then((response) => {
+				console.log(response);
 				return response.data;
 			})
 			.then((data) => res.send(data));
