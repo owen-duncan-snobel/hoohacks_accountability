@@ -58,14 +58,3 @@ const SearchBar = () => {
 	);
 };
 export default SearchBar;
-
-/* const Card = ({ Company_Name, Country, CEO }) => {
-	return (
-		<div>
-			{Company_Name}
-			{Country}
-			{CEO}
-		</div>
-	);
-};
- */
