@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Card from './card';
 const axios = require('axios');
 
 const SearchBar = () => {
@@ -47,9 +48,15 @@ const SearchBar = () => {
 				{data.map((el) => {
 					return (
 						<Card
-							xxxx={el.Company_Name}
-							Country={el.Country}
+							id={el.id}
+							key={el.Company_Name}
+							Company_Name={el.Company_Name}
 							CEO={el.CEO}
+							Country={el.Country}
+							Company_Bio={el.Company_Bio}
+							created_at={el.created_at}
+							updated_at={el.updated_at}
+							company_promises={el.company_promises}
 						/>
 					);
 				})}
