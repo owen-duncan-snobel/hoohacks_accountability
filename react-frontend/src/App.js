@@ -1,18 +1,12 @@
 import React from 'react';
-import SearchBar from './components/searchbar';
 
+import Card from './components/card';
+import NavBar from './components/navbar';
+import SearchBar from './components/searchbar';
 {
 	/*import SearchBar from 'material-ui-search-bar';*/
 }
 
-/*
-Axios:
-Get and fetch json
-check search state if match comapany name
-then render
-*/
-
-const axios = require('axios');
 function App() {
 	return (
 		<div className="App">

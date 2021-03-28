@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "companies",
   "info": {
-    "name": "Company"
+    "name": "Company",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -20,8 +21,16 @@
       "required": true
     },
     "company_promises": {
-      "via": "company",
-      "collection": "company-promises"
+      "collection": "company-promises",
+      "via": "company"
+    },
+    "Country": {
+      "type": "string",
+      "required": true
+    },
+    "Company_Bio": {
+      "type": "text",
+      "required": true
     }
   }
 }
