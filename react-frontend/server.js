@@ -24,7 +24,7 @@ app.get('/companies', async (req, res) => {
 			.then((data) => res.send(data));
 	} catch (error) {
 		console.log(error);
-		res.send('error');
+		res.status(400);
 	}
 });
 app.listen(8080);
