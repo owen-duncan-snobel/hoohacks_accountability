@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Card from './card';
 const axios = require('axios');
 
 const SearchBar = () => {
@@ -58,14 +59,3 @@ const SearchBar = () => {
 	);
 };
 export default SearchBar;
-
-/* const Card = ({ Company_Name, Country, CEO }) => {
-	return (
-		<div>
-			{Company_Name}
-			{Country}
-			{CEO}
-		</div>
-	);
-};
- */
