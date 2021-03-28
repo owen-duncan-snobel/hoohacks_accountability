@@ -4,19 +4,19 @@ const PromiseCard = ({ promise }) => {
 	let categoryName = promise.Categories;
 	let button = '';
 	switch (categoryName) {
-		case 'Climate_Action':
+		case 'Education':
 			button = (
 				<button
 					className={
-						'bg-blue-500 hover:bg-blue-400 opacity-75 text-white font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
+						'bg-pink-700 hover:bg-pink-600 opacity-75 text-white font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
 					}
 				>
 					{' '}
-					Climate Action
+					Education
 				</button>
 			);
 			break;
-		case 'Affordable_and_Clean_Energy':
+		case 'Gender_Equality':
 			button = (
 				<button
 					className={
@@ -24,7 +24,7 @@ const PromiseCard = ({ promise }) => {
 					}
 				>
 					{' '}
-					Affordable and Clean Energy
+					Gender Equality
 				</button>
 			);
 			break;
@@ -109,6 +109,30 @@ const PromiseCard = ({ promise }) => {
 				>
 					{' '}
 					Innovation_and_Infrastructure
+				</button>
+			);
+			break;
+		case 'Clean_Water':
+			button = (
+				<button
+					className={
+						'bg-blue-500 hover:bg-blue-400 opacity-75 text-white font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
+					}
+				>
+					{' '}
+					Clean Water
+				</button>
+			);
+			break;
+		case 'Climate_Action':
+			button = (
+				<button
+					className={
+						'bg-purple-700 hover:bg-purple-600 opacity-75 text-white font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
+					}
+				>
+					{' '}
+					Climate Action
 				</button>
 			);
 			break;

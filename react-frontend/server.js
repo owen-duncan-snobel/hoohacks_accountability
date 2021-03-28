@@ -2,22 +2,18 @@ const express = require('express');
 const path = require('path');
 const axios = require('axios');
 const app = express();
+const cors = require('cors');
 const PORT = process.env.PORT || 5000;
 
-// add middlewares
-app.use(express.static(path.join(__dirname, '..', 'build')));
-app.use(express.static('public'));
+app.use(cors());
+app.use(express.static(path.join(__dirname, 'build')));
 
-app.use((req, res, next) => {
-	res.sendFile(path.join(__dirname, '..', 'build', 'index.html'));
+app.get('/ping', (req, res) => {
+	return res.send('pong');
 });
 
-const path = require('path');
-const express = require('express');
-const app = express(); // create express app
-
 app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname, 'public', 'index.html'));
+	res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 app.get('/companies', async (req, res) => {
@@ -28,7 +24,6 @@ app.get('/companies', async (req, res) => {
 				'https://strapi-accountability-308920.uc.r.appspot.com/companies',
 		})
 			.then((response) => {
-				console.log(response);
 				return response.data;
 			})
 			.then((data) => res.send(data));
