@@ -11,10 +11,7 @@ function App() {
 	return (
 		<div className="App">
 			<div className="searchbar">
-				{/*< SearchBar
-      placeholder="Search"
-      autoFocus
-      />*/}
+				<NavBar />
 			</div>
 
 			<div>
