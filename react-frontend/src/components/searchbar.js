@@ -11,7 +11,10 @@ const SearchBar = () => {
 			await axios({
 				method: 'GET',
 				url: '/companies',
-			}).then((res) => setData(res.data));
+			}).then((res) => {
+				console.log(res);
+				setData(res.data);
+			});
 		} catch (error) {
 			console.log(error);
 		}
