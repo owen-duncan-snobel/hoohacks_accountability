@@ -23,8 +23,35 @@
       "required": true
     },
     "company": {
-      "model": "company",
-      "via": "company_promises"
+      "via": "company_promises",
+      "model": "company"
+    },
+    "Categories": {
+      "type": "enumeration",
+      "enum": [
+        "Education",
+        "Gender_Equality",
+        "Clean_Water",
+        "Climate_Action",
+        "Affordable_and_Clean_Energy",
+        "Sustainable_Cities_and_Communities",
+        "Peace_and_Justice_Strong_Institutions",
+        "Responsible_Consumption_and_Production",
+        "Economic_Growth",
+        "Reduced_Inequality",
+        "Innovation_and_Infrastructure"
+      ]
+    },
+    "Promise_Status": {
+      "type": "enumeration",
+      "enum": [
+        "Not_yet_rated",
+        "In_the_works",
+        "Kept",
+        "Partially_kept",
+        "Broken"
+      ],
+      "required": true
     }
   }
 }

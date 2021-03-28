@@ -1,40 +1,33 @@
 import React from 'react';
+
 import Card from './components/card';
+import NavBar from './components/navbar';
+import SearchBar from './components/searchbar';
 {/*import SearchBar from 'material-ui-search-bar';*/}
 
-
-/*
-Axios:
-Get and fetch json
-check search state if match comapany name
-then render
-*/
-
-const axios = require('axios');
 function App() {
-  return (
-    <div className="App">
-      <div className="searchbar">
-      {/*< SearchBar
+	return (
+		<div className="App">
+			<div className="searchbar">
+				{/*< SearchBar
       placeholder="Search"
       autoFocus
       />*/}
+
       </div>
       
-      <div>
-      <nav
-				role="navigation"
-				className="flex justify-between items-center h-16 bg-gradient-to-r from-blue-400 to-blue-500 text-white relative"
-			>
-				<a href="" className="pl-6 font-extrabold">
-        Accountable
-				</a> </nav>
-        
-        <div className="text-center font-bold">
-					<h1 className="lg:text-9xl text-5xl sm:text-6xl text5xl mb-10 text-blue-600 hover:text-black duration-300">
-						Track their promises
-					</h1>
-				</div>
+
+			</div>
+			{/* 	<NavBar /> */}
+
+			<div className="text-center font-bold">
+				<h1 className="lg:text-9xl text-5xl sm:text-6xl text5xl mb-10 text-blue-600 hover:text-grey duration-300">
+					Track their promises
+				</h1>
+			</div>
+
+			<SearchBar />
+		</div>
         
   
           <div className="bg-white flex items-center rounded-full shadow-xl ml-4">
@@ -55,18 +48,10 @@ function App() {
   </div>
 
       </div>
-
-
-
-
-
-
-
-
-
-
-   
   );
+
+	);
+
 }
 
 export default App;
