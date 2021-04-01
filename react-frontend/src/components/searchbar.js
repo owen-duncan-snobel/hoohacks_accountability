@@ -10,9 +10,18 @@ const SearchBar = () => {
 	 */
 	useEffect(async () => {
 		try {
-			await fetch('/companies').then((res) => {
-				setData(res.data);
-			});
+			await fetch('https://accountable-backend.herokuapp.com/companies', {
+				method: 'GET', // or 'PUT'
+				headers: {
+					'Content-Type': 'application/json',
+				},
+			})
+				.then((response) => {
+					return response.json();
+				})
+				.then((data) => {
+					setData(data);
+				});
 		} catch (error) {
 			console.log(error);
 		}
