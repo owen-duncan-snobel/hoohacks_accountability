@@ -5,7 +5,9 @@ const axios = require('axios');
 const SearchBar = () => {
 	const [data, setData] = useState([]);
 	const [searchTerm, setSearchTerm] = useState('');
-
+	/**
+	 * TODO NEED TO REPLACE AXIOS WITH FETCH FOR HEROKU DEPLOYMENT WITH EXPRESS
+	 */
 	useEffect(async () => {
 		try {
 			await axios({
