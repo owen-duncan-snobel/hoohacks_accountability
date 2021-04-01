@@ -10,10 +10,7 @@ const SearchBar = () => {
 	 */
 	useEffect(async () => {
 		try {
-			await axios({
-				method: 'GET',
-				url: '/companies',
-			}).then((res) => {
+			await fetch('/companies').then((res) => {
 				setData(res.data);
 			});
 		} catch (error) {
