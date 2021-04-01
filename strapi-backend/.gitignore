@@ -1,7 +1,7 @@
 ############################
 # OS X
 ############################
-
+app.yaml
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -112,6 +112,5 @@ exports
 *.cache
 build
 .strapi-updater.json
-
-
+*.yaml
 app.yaml
