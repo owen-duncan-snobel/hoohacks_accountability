@@ -11,7 +11,7 @@ const Card = ({
 	company_promises,
 }) => {
 	return (
-		<body className="flex justify-center items-center my-24">
+		<div className="flex justify-center items-center my-24">
 			<div className="w-full sm:w-2/3 flex flex-col bg-white shadow-lg rounded-lg overflow-hidden">
 				<div className="bg-gray-200 text-2xl px-6 py-4 font-bold">
 					{Company_Name}
@@ -48,7 +48,7 @@ const Card = ({
 					</div>
 				</div>
 
-				<div className="bg-gray-200 text-gray-700 font-bold text-lg px-6 py-4">
+				<div className="bg-gray-200 p-2 text-gray-700 font-bold text-lg">
 					PROMISES:
 					{company_promises.map((promise) => {
 						return (
@@ -58,7 +58,7 @@ const Card = ({
 							/>
 						);
 					})}
-					<div className="flex justify-between items-center px-6 py-4">
+					<div className="flex flex-wrap justify-between items-center px-6 py-4">
 						<div className="bg-orange-600 text-xs uppercase px-2 py-1 rounded-full border border-gray-200 text-gray-200 font-bold">
 							{
 								company_promises.filter((el) => {
@@ -90,7 +90,7 @@ const Card = ({
 
 				<div className="bg-gray-400 px-6 py-1"></div>
 			</div>
-		</body>
+		</div>
 	);
 };
 export default Card;

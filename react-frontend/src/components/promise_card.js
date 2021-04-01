@@ -20,7 +20,7 @@ const PromiseCard = ({ promise }) => {
 			button = (
 				<button
 					className={
-						'bg-red-500 hover:bg-red-400 opacity-75 text-white font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
+						'bg-red-500 hover:bg-red-400 opacity-75 text-white text-xs sm:text-base font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
 					}
 				>
 					{' '}
@@ -32,7 +32,7 @@ const PromiseCard = ({ promise }) => {
 			button = (
 				<button
 					className={
-						'bg-indigo-500 hover:bg-indigo-400 opacity-75 text-white font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
+						'bg-indigo-500 hover:bg-indigo-400 opacity-75 text-white text-xs sm:text-base font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
 					}
 				>
 					{' '}
@@ -44,7 +44,7 @@ const PromiseCard = ({ promise }) => {
 			button = (
 				<button
 					className={
-						'bg-red-700 hover:bg-red-600 opacity-75 text-white font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
+						'bg-red-700 hover:bg-red-600 opacity-75 text-white text-xs sm:text-base font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
 					}
 				>
 					{' '}
@@ -56,7 +56,7 @@ const PromiseCard = ({ promise }) => {
 			button = (
 				<button
 					className={
-						'bg-yellow-900 hover:bg-yellow-900 opacity-75 text-white font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
+						'bg-yellow-900 hover:bg-yellow-900 opacity-75 text-white text-xs sm:text-base font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
 					}
 				>
 					{' '}
@@ -68,7 +68,7 @@ const PromiseCard = ({ promise }) => {
 			button = (
 				<button
 					className={
-						'bg-yellow-600 hover:bg-yellow-500 opacity-75 text-white font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
+						'bg-yellow-600 hover:bg-yellow-500 opacity-75 text-white text-xs sm:text-base font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
 					}
 				>
 					{' '}
@@ -80,7 +80,7 @@ const PromiseCard = ({ promise }) => {
 			button = (
 				<button
 					className={
-						'bg-blue-600 hover:bg-blue-500 opacity-75 text-white font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
+						'bg-blue-600 hover:bg-blue-500 opacity-75 text-white text-xs sm:text-base font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
 					}
 				>
 					{' '}
@@ -92,7 +92,7 @@ const PromiseCard = ({ promise }) => {
 			button = (
 				<button
 					className={
-						'bg-indigo-500 hover:bg-indigo-400 opacity-75 text-white font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
+						'bg-indigo-500 hover:bg-indigo-400 opacity-75 text-white text-xs sm:text-base font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
 					}
 				>
 					{' '}
@@ -104,7 +104,7 @@ const PromiseCard = ({ promise }) => {
 			button = (
 				<button
 					className={
-						'bg-purple-200 hover:bg-purple-100 opacity-75 text-white font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
+						'bg-purple-200 hover:bg-purple-100 opacity-75 text-white text-xs sm:text-base font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
 					}
 				>
 					{' '}
@@ -116,7 +116,7 @@ const PromiseCard = ({ promise }) => {
 			button = (
 				<button
 					className={
-						'bg-blue-500 hover:bg-blue-400 opacity-75 text-white font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
+						'bg-blue-500 hover:bg-blue-400 opacity-75 text-white text-xs sm:text-base font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
 					}
 				>
 					{' '}
@@ -128,7 +128,7 @@ const PromiseCard = ({ promise }) => {
 			button = (
 				<button
 					className={
-						'bg-purple-700 hover:bg-purple-600 opacity-75 text-white font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
+						'bg-purple-700 hover:bg-purple-600 opacity-75 text-white text-xs sm:text-base font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
 					}
 				>
 					{' '}
@@ -140,7 +140,7 @@ const PromiseCard = ({ promise }) => {
 			button = (
 				<button
 					className={
-						' opacity-75 text-white font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
+						' opacity-75 text-white text-xs sm:text-base font-bold py-1 px-4 mx-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'
 					}
 				>
 					{' '}
@@ -157,6 +157,7 @@ const PromiseCard = ({ promise }) => {
 		.toISOString()
 		.split('T')[0];
 
+	const promise_status = promise.Promise_Status.split('_').join(' ');
 	return (
 		<div className="px-6 py-4 border-t border-gray-200">
 			<div className="border rounded-lg p-4 bg-gray-200">
@@ -168,6 +169,9 @@ const PromiseCard = ({ promise }) => {
 					Date updated: {updated_date}
 				</p>
 				<p className="text-sm text-gray-700 mt-1 leading-tight">
+					Promise Status: {promise_status}
+				</p>
+				<p className="text-sm text-gray-700 mt-1 leading-tight">
 					Source:{' '}
 					<a target="_blank" href={promise.Source}>
 						<i>{promise.Source}</i>
@@ -175,7 +179,7 @@ const PromiseCard = ({ promise }) => {
 				</p>
 			</div>
 
-			<div className="px-6 py-4 border-t border-gray-200">
+			<div className=" py-4 border-t border-gray-200">
 				<div className="border rounded-lg p-4 bg-gray-200">
 					{button}
 				</div>

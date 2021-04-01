@@ -5,13 +5,11 @@ const axios = require('axios');
 const SearchBar = () => {
 	const [data, setData] = useState([]);
 	const [searchTerm, setSearchTerm] = useState('');
-	/**
-	 * TODO NEED TO REPLACE AXIOS WITH FETCH FOR HEROKU DEPLOYMENT WITH EXPRESS
-	 */
+
 	useEffect(async () => {
 		try {
-			await fetch('https://accountable-backend.herokuapp.com/companies', {
-				method: 'GET', // or 'PUT'
+			await fetch('/companies', {
+				method: 'GET',
 				headers: {
 					'Content-Type': 'application/json',
 				},
@@ -32,7 +30,7 @@ const SearchBar = () => {
 			return (
 				<div>
 					<div className="bg-white flex rounded-full">
-						<div className="flex justify-between w-1/2 mx-auto rounded-full shadow-xl pl-2 pr-2 h-14 bg-gradient-to-r from-blue-300 to-blue-600 text-white">
+						<div className="flex justify-between w-5/6 sm:w-1/2 mx-auto rounded-full shadow-xl pl-2 pr-2 h-14 bg-gradient-to-r from-blue-300 to-blue-600 text-white">
 							<input
 								className="rounded-l-mid w-3/4  m-2 py-2 px-2 text-gray-700 text-center leading-tight focus:outline-none rounded-full"
 								id="search"
@@ -59,6 +57,7 @@ const SearchBar = () => {
 					</div>
 
 					<div>
+						{/* Search bar filtering by CEO name, Compnany name */}
 						{data &&
 							data.length &&
 							data
