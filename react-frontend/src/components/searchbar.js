@@ -21,6 +21,7 @@ const SearchBar = () => {
 					setData(data);
 				});
 		} catch (error) {
+			console.log(data);
 			console.log(error);
 		}
 	}, []);

@@ -1,6 +1,14 @@
-# tailwind-typescript-react-starter
+# **Accountable**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+Companies state numerous goals to the public but have they ever fulfilled any of them? 
+
+[**Accountable**](https://accountable-frontend.herokuapp.com/), our web app, well holds them accountable by detailing promises made.
+
+![](https://imgur.com/a/bMBD7ty.jpg)
+
+
 
 ## Available Scripts
 
